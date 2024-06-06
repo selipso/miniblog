@@ -1,0 +1,28 @@
+{
+  "site": {
+    "title": "Kapisce | Exploring glitches in the Matrix",
+    "base_url": "https://kapisce.com",
+    "base_path": "/",
+    "trailing_slash": false,
+    "favicon": "/images/favicon.ico",
+    "logo": "/images/kapisce.svg",
+    "logo_width": "200",
+    "logo_height": "34",
+    "logo_text": "Bookworm Light"
+  },
+
+  "settings": {
+    "pagination": 5,
+    "summary_length": 220
+  },
+
+  "metadata": {
+    "meta_author": "Yatit Thakker",
+    "meta_image": "/images/og-image.png",
+    "meta_description": "Kapisce is an open-source blog about technology. Contributions and guest posts are welcome!"
+  },
+
+  "params": {
+    "copyright": "Copyright © 2024 Yatit Thakker"
+  }
+}

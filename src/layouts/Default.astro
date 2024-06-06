@@ -1,26 +1,16 @@
 ---
-import BaseNavigation from '@components/layout/BaseNavigation.astro';
-import BaseFooter from '@components/layout/BaseFooter.astro';
-import BaseHead from '../components/layout/BaseHead.astro';
-import '../styles/global.css';
+import { markdownify } from "@common/utils/textConverter";
 
-interface Props {
-  title: string;
-  description: string;
-  classList?: string;
-  pageTitle?: string;
-  ogImage?: URL;
-}
-
-const { title, description, classList, pageTitle, ogImage } = Astro.props;
+const { data } = Astro.props;
+const { title } = data.data;
+const { Content } = await data.render();
 ---
 
-<html lang='en' class='h-full'>
-  <BaseHead ogImage={ogImage} title={title} description={description} />
-
-  <body class:list={[classList]}>
-    <BaseNavigation {pageTitle} />
-    <slot />
-    <BaseFooter />
-  </body>
-</html>
+<section class="section">
+  <div class="container">
+    <h1 set:html={markdownify(title)} class="h2 page-heading" />
+    <div class="content">
+      <Content />
+    </div>
+  </div>
+</section>

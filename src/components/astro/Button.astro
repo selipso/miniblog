@@ -1,0 +1,65 @@
+---
+interface Props {
+  href: string;
+  target?: '_blank' | '_self';
+  color?: string | undefined;
+  shape?: 'pill' | 'square' | 'default';
+  size?: 'sm' | 'md' | 'lg';
+}
+
+if (Astro.props.target === undefined) {
+  Astro.props.target = '_self';
+}
+
+if (Astro.props.color === undefined) {
+  Astro.props.color = '#00c4c4';
+}
+
+const { href, target, color, shape='default', size='md' } = Astro.props;
+---
+
+<style define:vars={{ color: color }}>
+  .pill {
+    border-radius: 10rem;
+  }
+  .square {
+    border-radius: 0;
+  }
+  .default {
+    border-radius: 4px;
+  }
+  .sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.8rem;
+  }
+  .md {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+  .lg {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.2rem;
+  }
+  a.kp-btn {
+    box-shadow: 2px 2px 4px black;
+    background-color: white;
+    display: inline-block;
+    border: 2px solid black;
+    transition: all;
+    transition-duration: 0.5s;
+    animation: ease-in-out;
+    font-family: 'Sanchez', serif;
+  }
+  a.kp-btn:hover {
+    box-shadow: 1px 1px 2px black;
+    background-color: var(--color);
+  }
+  a.kp-btn:active {
+    box-shadow: inset 1px 1px 2px black;
+    background-color: var(--color);
+  }
+</style>
+
+<a href={href} target={target} class={`kp-btn ${shape} ${size}`}>
+  <slot />
+</a>
