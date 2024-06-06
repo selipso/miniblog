@@ -1,5 +1,5 @@
 {
-  "name": "brutal",
+  "name": "kapisce-blog",
   "version": "1.2.0",
   "private": false,
   "type": "module",
@@ -7,9 +7,9 @@
   "author": {
     "name": "Elian Van Cutsem",
     "email": "hello@elian.codes",
-    "url": "https://www.elian.codes/"
+    "url": "https://kapisce.com/yatit-thakker"
   },
-  "homepage": "https://brutal.elian.codes",
+  "homepage": "https://kapisce.com/",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",

@@ -13,15 +13,15 @@ const height = 630;
 const width = 1200;
 
 export const GET: APIRoute = async () => {
-  const link = 'https://brutal.elian.codes';
+  const link = 'https://kapisce.com/';
   const html = toReactElement(`
   <div style="background-color: white; display: flex; flex-direction: column; height: 100%; padding: 3rem; width: 100%">
     <div style="display:flex; height: 100%; width: 100%; background-color: white; border: 6px solid black; border-radius: 0.5rem; padding: 2rem; filter: drop-shadow(6px 6px 0 rgb(0 0 0 / 1));">
       <div style="display: flex; flex-direction: column; justify-content: space-between; width: 100%; filter: drop-shadow()">
         <div style="display: flex; flex-direction: column; gap: 0.75rem;">  
-          <p style="font-size: 48px;">Brutal</p>
-          <p style="font-size: 38px;">A theme for Astro</p>
-          <p style="font-size: 38px;">Brought to you by Elian</p>
+          <p style="font-size: 48px;">Kapisce</p>
+          <p style="font-size: 38px;">An open-source blog</p>
+          <p style="font-size: 38px;">Explore glitches in the matrix</p>
         </div>
         <div style="display: flex; justify-content: space-between; align-items: baseline; padding-top: -2rem;">
           <p style="font-size: 32px">${link}</p>

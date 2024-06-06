@@ -36,9 +36,9 @@ const { title, description, authors, categories, image, imageAlt, date, tags } =
                     href={`/authors/${slugify(author.slug)}`}
                     class="flex items-center hover:text-primary font-medium"
                   >
-                    {author.data.image && (
+                    {author.data.imgUrl && (
                       <Image
-                        src={author.data.image}
+                        src={author.data.imgUrl}
                         alt={author.data.title}
                         height={50}
                         width={50}
