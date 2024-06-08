@@ -4,11 +4,11 @@
     "base_url": "https://kapisce.com",
     "base_path": "/",
     "trailing_slash": false,
-    "favicon": "/images/favicon.ico",
-    "logo": "/images/kapisce.svg",
+    "favicon": "/icon/favicon.ico",
+    "logo": "/kapisce.svg",
     "logo_width": "200",
     "logo_height": "34",
-    "logo_text": "Bookworm Light"
+    "logo_text": "Kapisce"
   },
 
   "settings": {
